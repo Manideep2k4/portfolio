@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Parvatini Manideep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        .certifications {
+            padding: 100px 0;
+            background-color: var(--bg-color);
+        }
+        .certifications .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .workshops-section, .trainings-section, .certificates-section {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .workshops-section h3, .trainings-section h3, .certificates-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .workshop-item, .training-item, .certificate-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .workshop-item:last-child, .training-item:last-child, .certificate-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .workshop-item h4, .training-item h4, .certificate-item h4 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .workshop-item ul, .training-item p, .certificate-item p {
+            color: var(--text-color);
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .workshop-item ul li {
+            color: var(--text-color);
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .workshop-item ul li:before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+        .training-content, .certificate-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .training-text, .certificate-text {
+            flex: 1;
+        }
+        .training-image, .certificate-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .training-content, .certificate-content {
+                flex-direction: column;
+            }
+            .training-image, .certificate-image {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .certificates-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Manideep</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#more">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="art-gallery.html">ART Gallery</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="certifications">
+        <div class="container">
+            <div class="certificates-section" data-aos="fade-up">
+                <h3>Certificates</h3>
+                <div class="certificates-grid">
+                    <div class="certificate-item">
+                        <h4>HTML from Cipher Schools</h4>
+                        <img src="html.jpg" alt="HTML Certificate" class="certificate-image">
+                    </div>
+                    <div class="certificate-item">
+                        <h4>ChatGPT Advanced Data Analysis</h4>
+                        <img src="chatgpt.png" alt="ChatGPT Certificate" class="certificate-image">
+                    </div>
+                    <div class="certificate-item">
+                        <h4>SQL for Data Analysis</h4>
+                        <img src="great learing.png" alt="SQL Certificate" class="certificate-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainings-section" data-aos="fade-up">
+                <h3>Trainings</h3>
+                
+                <div class="training-item">
+                    <h4>Data Structures and Algorithms</h4>
+                    <div class="training-content">
+                        <div class="training-text">
+                            <p>During an intensive Summer Training Program at Lovely Professional University (LPU), I gained hands-on expertise in Data Structures and Algorithms (DSA), working with arrays, linked lists, stacks, queues, trees, graphs, hashing, and dynamic programming. I focused on designing and implementing efficient algorithms to solve complex problems, significantly strengthening my problem-solving skills and algorithmic thinking for both competitive programming and real-world applications.</p>
+                        </div>
+                        <img src="dsa.png" alt="DSA Training" class="training-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="workshops-section" data-aos="fade-up">
+                <h3>Workshops</h3>
+                
+                <div class="workshop-item">
+                    <h4>MY EQUATION</h4>
+                    <ul>
+                        <li>Learned about Robotic joints, Configuration, Architecture</li>
+                        <li>Gained knowledge on working range and features of ABB IRB 120</li>
+                        <li>Learned about application called ONSHAPE software</li>
+                    </ul>
+                </div>
+
+                <div class="workshop-item">
+                    <h4>Club Cadence</h4>
+                    <ul>
+                        <li>Participated in various events, seminars like "Bridging the gap"</li>
+                        <li>Planned events like Cadence Virtuoso Flow Studio and Samsung Foundy</li>
+                        <li>Captured memorable moments during the event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Manideep</div>
+                <p>&copy; 2025 Parvatini Manideep. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
